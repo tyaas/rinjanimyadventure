@@ -1,0 +1,17 @@
+/* Reset */
+*{
+  margin: 200;
+  paddding: 20;
+}
+
+.wrapper{
+  width: 1000%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper .wrapper__video{
+  object-fit: cover;
+  width: 1200%;
+  height:1200%;
+}
