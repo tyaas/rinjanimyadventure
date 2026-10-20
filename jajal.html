@@ -80,7 +80,7 @@
       }
 
       .hero {
-        padding: 100px 20px;
+        padding: 120px 20px;
         background:
           linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.48)),
           url("img/mtrinjani.jpg") center center / cover no-repeat;
@@ -333,7 +333,7 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a
         class="navbar-brand"
         href="https://www.instagram.com/rinjani_lovers/"
@@ -364,58 +364,54 @@
           <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
+
+          <li class="nav-item dropdown info-dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="infoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Info Lainnya
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="infoDropdown">
+              <a
+                class="dropdown-item"
+                href="https://id.wikipedia.org/wiki/Gunung_Rinjani"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wikipedia
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://www.traveloka.com/en-id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pesan Tiket
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <a
+                class="dropdown-item"
+                href="https://www.malasngoding.com/category/web-design"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Web Design
+              </a>
             </div>
           </li>
         </ul>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-blue">Info Lainnya</button>
-
-          <button
-            type="button"
-            class="btn btn-blue dropdown-toggle dropdown-toggle-split"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-label="Buka menu informasi lainnya"
-          >
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-right">
-            <a
-              class="dropdown-item"
-              href="https://id.wikipedia.org/wiki/Gunung_Rinjani"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Wikipedia
-            </a>
-
-            <a
-              class="dropdown-item"
-              href="https://www.traveloka.com/en-id/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Pesan Tiket
-            </a>
-
-            <div class="dropdown-divider"></div>
-
-            <a
-              class="dropdown-item"
-              href="https://www.malasngoding.com/category/web-design"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Web Design
-            </a>
-          </div>
-        </div>
       </div>
     </nav>
-
     <!-- HERO -->
     <header class="jumbotron text-center hero rounded-0 mb-0">
       <h1>Pendakian Gunung Rinjani</h1>
@@ -853,16 +849,36 @@
           <h2>Rinjani My Adventure</h2>
           <div class="footer-border"></div>
 
-          <p>Kepoin Instagram Rinjani Official, yuk!</p>
+          <p>Meet the Creators 👋</p>
 
-          <a
-            class="btn btn-info"
-            href="https://www.instagram.com/rinjani_lovers/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Kunjungi Instagram
-          </a>
+          <div class="footer-instagram-links">
+            <a
+              href="https://www.instagram.com/nerow02?psln=MXNkMTUwNXNicDFzeg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              @nerow02
+            </a>
+
+            <a
+              href="https://www.instagram.com/tipalsyah_?psln=MXg0Z2cwa2lxbmJzYg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              @tipalsyah_
+            </a>
+
+            <a
+              href="https://www.instagram.com/ezbeng_?srtk=MXhtODNoeGxlMmUzMw=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              @ezbeng_
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -882,6 +898,28 @@
           .each(function () {
             this.pause();
           });
+      });
+    </script>
+
+    <!-- Hentikan video saat slide berpindah -->
+    <script>
+      $("#carouselExampleControls").on("slide.bs.carousel", function () {
+        $(this)
+          .find("video")
+          .each(function () {
+            this.pause();
+          });
+      });
+    </script>
+
+    <!-- Efek navbar saat halaman di-scroll -->
+    <script>
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 20) {
+          $(".navbar").addClass("navbar-scrolled");
+        } else {
+          $(".navbar").removeClass("navbar-scrolled");
+        }
       });
     </script>
   </body>

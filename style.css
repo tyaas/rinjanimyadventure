@@ -592,3 +592,618 @@ nav.menu ul a:hover {
     padding: 10px 24px;
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  overflow-wrap: break-word;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+/* Kontainer utama */
+.wrap {
+  width: min(1100px, 92%);
+  margin: 24px auto;
+}
+
+/* Konten utama dan sidebar */
+.blog {
+  float: left;
+  width: calc(100% - 300px);
+  min-width: 0;
+}
+
+.sidebar {
+  float: right;
+  width: 275px;
+  min-width: 0;
+}
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Gambar artikel */
+.conteudo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigasi */
+nav.menu {
+  width: 100%;
+}
+
+nav.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav.menu ul li {
+  min-width: 0;
+}
+
+nav.menu ul a {
+  padding: 18px 20px;
+  font-size: 15px;
+}
+
+/* Slider enam gambar */
+.malasngoding-slider {
+  width: 100%;
+  max-width: 768px;
+  aspect-ratio: 768 / 450;
+  overflow: hidden;
+}
+
+.isi-slider {
+  display: flex;
+  width: 600%;
+  height: 100%;
+}
+
+.isi-slider img {
+  flex: 0 0 calc(100% / 6);
+  width: calc(100% / 6);
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer-container {
+  width: 100%;
+  gap: 24px;
+}
+
+.left-col,
+.right-col {
+  min-width: 0;
+}
+
+.right-col {
+  flex: 1 1 300px;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.txtb {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Video hero */
+.container2 {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 40px 5%;
+}
+
+.container2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container2 h1 {
+  max-width: 100%;
+  font-size: clamp(32px, 5vw, 60px);
+  overflow-wrap: anywhere;
+}
+
+.container2 a {
+  max-width: calc(100% - 32px);
+  white-space: normal;
+}
+
+/* =========================================
+   TABLET: 768px - 1024px
+========================================= */
+@media screen and (max-width: 1024px) {
+  .wrap {
+    width: 94%;
+  }
+
+  .blog {
+    width: calc(100% - 260px);
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+
+  .conteudo {
+    padding: 22px;
+  }
+
+  nav.menu ul a {
+    padding: 16px 14px;
+    font-size: 14px;
+  }
+
+  .right-col h1 {
+    font-size: 24px;
+  }
+
+  .footer-container {
+    padding: 0 24px;
+  }
+}
+
+/* =========================================
+   TABLET KECIL & HP: maksimal 767px
+========================================= */
+@media screen and (max-width: 767px) {
+  /* Tata letak utama menjadi satu kolom */
+  .wrap {
+    width: 92%;
+    margin: 16px auto;
+  }
+
+  .blog,
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  .sidebar .widget {
+    padding: 20px;
+  }
+
+  .conteudo {
+    width: 100%;
+    margin: 16px auto;
+    padding: 20px;
+  }
+
+  .conteudo h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .conteudo p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .post-info {
+    float: none;
+    margin: 0 0 14px;
+    font-size: 11px;
+  }
+
+  /* Navigasi vertikal */
+  nav.menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.menu ul li {
+    width: 100%;
+  }
+
+  nav.menu ul a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  /* Slider */
+  .malasngoding-slider {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-width: 4px;
+    margin: 18px auto;
+  }
+
+  .isi-slider img {
+    object-fit: cover;
+  }
+
+  /* Footer */
+  footer {
+    padding: 32px 0;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 24px;
+    padding: 0 20px;
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-col {
+    margin-bottom: 0;
+  }
+
+  .right-col h1 {
+    font-size: 23px;
+  }
+
+  .border {
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .social-media a {
+    margin: 0;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .txtb,
+  .btn {
+    width: 100%;
+    min-height: 46px;
+    margin: 0;
+  }
+
+  /* Video hero */
+  .container2 {
+    min-height: 85vh;
+    min-height: 85svh;
+    padding: 32px 20px;
+  }
+
+  .container2 h1 {
+    font-size: clamp(30px, 7vw, 46px);
+    line-height: 1.2;
+  }
+
+  .container2 a {
+    margin-top: 140px;
+    padding: 12px 28px;
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   HP: maksimal 480px
+========================================= */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header .judul {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  header .deskripsi {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    width: 94%;
+    margin: 12px auto;
+  }
+
+  nav.menu ul a {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .conteudo {
+    padding: 16px;
+  }
+
+  .conteudo h1 {
+    font-size: 21px;
+  }
+
+  .conteudo p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .conteudo img {
+    margin-bottom: 18px;
+  }
+
+  /* Sembunyikan sidebar pada HP */
+  .sidebar {
+    display: none;
+  }
+
+  .post-info {
+    display: none;
+  }
+
+  /* Slider pada HP */
+  .malasngoding-slider {
+    aspect-ratio: 3 / 2;
+    border-width: 3px;
+  }
+
+  .container2 {
+    min-height: 80vh;
+    min-height: 80svh;
+    padding: 24px 16px;
+  }
+
+  .container2 h1 {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  .container2 a {
+    margin-top: 120px;
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    padding: 0 16px;
+  }
+
+  .right-col h1 {
+    font-size: 21px;
+  }
+
+  .txtb,
+  .btn {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .page-content {
+    min-height: 60vh;
+    font-size: clamp(22px, 7vw, 32px);
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   HP SANGAT KECIL: maksimal 360px
+========================================= */
+@media screen and (max-width: 360px) {
+  .wrap {
+    width: 96%;
+  }
+
+  .conteudo {
+    padding: 12px;
+  }
+
+  .conteudo h1 {
+    font-size: 19px;
+  }
+
+  .container2 h1 {
+    font-size: 27px;
+  }
+
+  .container2 a {
+    margin-top: 105px;
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  .footer-container {
+    padding: 0 12px;
+  }
+}
+
+.navbar {
+  z-index: 1050;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efek hover pada menu navbar */
+.navbar .nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #17a2b8;
+}
+
+/* Garis animasi di bawah menu */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 3px;
+  height: 2px;
+  background-color: #17a2b8;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus::after {
+  transform: scaleX(1);
+}
+
+.navbar-scrolled {
+  background-color: #16191c !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Dropdown Info Lainnya */
+.info-dropdown .dropdown-menu {
+  margin-top: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 190px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Item di dalam dropdown */
+.info-dropdown .dropdown-item {
+  padding: 10px 14px;
+  border-radius: 5px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.info-dropdown .dropdown-item:hover,
+.info-dropdown .dropdown-item:focus {
+  color: #fff;
+  background-color: #17a2b8;
+  padding-left: 20px;
+}
+
+/* Tablet dan HP */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 12px;
+  }
+
+  .navbar .nav-link {
+    padding: 12px 10px;
+  }
+
+  .navbar .nav-link::after {
+    display: none;
+  }
+
+  .info-dropdown .dropdown-menu {
+    margin: 0 0 10px;
+    background-color: #343a40;
+    box-shadow: none;
+  }
+
+  .info-dropdown .dropdown-item {
+    color: #f8f9fa;
+  }
+
+  .info-dropdown .dropdown-item:hover,
+  .info-dropdown .dropdown-item:focus {
+    color: #fff;
+    background-color: #17a2b8;
+  }
+}
+
+/* Kurangi animasi jika diminta oleh pengaturan perangkat */
+@media (prefers-reduced-motion: reduce) {
+  .navbar,
+  .navbar .nav-link,
+  .navbar .nav-link::after,
+  .info-dropdown .dropdown-item {
+    transition: none;
+  }
+}
+
+/* Link Instagram pada footer */
+.footer-instagram-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.footer-instagram-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #495057;
+  border-radius: 6px;
+  color: #f8f9fa;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-instagram-links a:hover {
+  color: #fff;
+  background-color: #c13584;
+  border-color: #c13584;
+  transform: translateY(-3px);
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+  .footer-instagram-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-instagram-links a {
+    width: 100%;
+  }
+}
