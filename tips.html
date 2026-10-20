@@ -1,378 +1,466 @@
-<!DOCTYPE html>
-<html>
-  <title>Tips Mendaki</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="img/logo1.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link
-    rel="stylesheet"
-    href="https://badoystudio.com/cloudme.fonts.googleapis.com/css?family=Inconsolata"
-  />
-  <link rel="stylesheet" type="text/css" href="asu.css" />
-  <style>
-    body,
-    html {
-      height: 100%;
-      font-family: "Inconsolata", sans-serif;
-    }
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips Mendaki Gunung Rinjani</title>
 
-    .bgimg {
-      background-position: center;
-      background-size: cover;
-      background-image: url("img/2.JPG");
-      min-height: 75%;
-    }
+    <link rel="icon" href="img/logo1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <link rel="stylesheet" href="asu.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="text.css" />
 
-    .menu {
-      display: none;
-    }
-  </style>
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        font-family: "Inconsolata", sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/2.JPG");
+        min-height: 75vh;
+        position: relative;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .w3-top {
+        z-index: 10;
+      }
+
+      .w3-content {
+        width: 100%;
+      }
+
+      .article-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+      }
+
+      .malasngoding-slider {
+        width: 100%;
+        max-width: 800px;
+        margin: 24px auto;
+        overflow: hidden;
+      }
+
+      .isi-slider img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .tablink {
+        cursor: pointer;
+      }
+
+      @media (max-width: 600px) {
+        .bgimg {
+          min-height: 60vh;
+        }
+
+        .w3-top .w3-button {
+          padding: 8px 4px;
+          font-size: 11px;
+        }
+
+        .w3-display-middle span {
+          font-size: 32px !important;
+        }
+
+        .w3-large {
+          font-size: 16px !important;
+        }
+      }
+    </style>
+  </head>
+
   <body>
-    <!-- Links (sit on top) -->
-    <div class="w3-top">
+    <!-- Navigasi -->
+    <nav class="w3-top">
       <div class="w3-row w3-padding w3-black">
         <div class="w3-col s3">
-          <a href="jajal.html" class="w3-button w3-block w3-black">HOME</a>
+          <a href="jajal.html" class="w3-button w3-block w3-black"> HOME </a>
         </div>
+
         <div class="w3-col s3">
-          <a href="gallery.html" class="w3-button w3-block w3-black">GALLERY</a>
+          <a href="gallery.html" class="w3-button w3-block w3-black">
+            GALLERY
+          </a>
         </div>
+
         <div class="w3-col s3">
           <a
             href="https://www.instagram.com/rinjani_lovers/"
             class="w3-button w3-block w3-black"
-            >INSTAGRAM</a
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            INSTAGRAM
+          </a>
         </div>
+
         <div class="w3-col s3">
           <a
             href="https://www.rinjaninationalpark.id/"
             class="w3-button w3-block w3-black"
-            >RINJANI NASIONAL PARK</a
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            RINJANI NATIONAL PARK
+          </a>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- Header with image -->
+    <!-- Header -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
       <div
         class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small"
       >
         <span class="w3-tag">Pecinta Alam</span>
       </div>
+
       <div class="w3-display-middle w3-center">
-        <span class="w3-text-white" style="font-size: 50px"
-          >Rinjani My Adventure</span
-        >
+        <span class="w3-text-white" style="font-size: 50px">
+          Rinjani My Adventure
+        </span>
       </div>
+
       <div class="w3-display-bottomright w3-center w3-padding-large">
         <span class="w3-text-white">Informatika</span>
       </div>
     </header>
 
-    <!-- Add a background color and large text to the whole page -->
-    <div class="w3-sand w3-grayscale w3-large">
-      <!-- About Container -->
-      <div class="w3-container" id="about">
+    <!-- Konten utama -->
+    <main class="w3-sand w3-grayscale w3-large">
+      <!-- Medan dan kondisi -->
+      <section class="w3-container" id="about">
         <div class="w3-content" style="max-width: 700px">
           <h4 class="w3-center w3-padding-64">
-            <span class="w3-tag w3-wide">Medan Dan Kondisi</span>
+            <span class="w3-tag w3-wide">Medan dan Kondisi</span>
           </h4>
-          <head>
-            <title>Format text CSS</title>
-            <link rel="stylesheet" type="text/css" href="text.css" />
-          </head>
-          <body>
-            <p class="tulisan_justify">
-              Jika kamu naik lewat jalur Sembalun dan turun Senaru, sumber air
-              dapat ditemukan di pos 2 Sembalun, pos 3 Sembalun (hanyalah berupa
-              rembesan terkadang kering di musim kemarau), Plawangan Sembalun,
-              danau Segara Anak, Kemudian Pos 2 Senaru. Setelah mengetahui
-              dimana saja sumber air berada, perhitungkan seberapa banyak air
-              yang akan dibawa dari sumber air satu ke sumber air lainnya.
-              Selanjutnya tempat camping, dimana saja kamu dapat bermalam. Salah
-              satu contoh jika naik lewat jalur Sembalun dan turun Senaru kamu
-              dapat bermalam di pos 2 atau pos 3 Sembalun, Plawangan Sembalun,
-              dan Danau Segera Anak. Memang kamu dapat camping di Plawangan
-              Senaru tapi tempat disana tak terlalu luas dan juga tak terdapat
-              sumber air. Ketahui juga bagaimana kondisi jalur yang akan
-              dilalui. Seperti kondisi jalur dari basecamp Sembalun – Pos 3 yang
-              mempunyai medan tak terlalu menanjak dan berupa savana. Pos 3
-              Sembalun – Plawangan Sembalun mempunyai medan menanjak dan
-              berdebu. Jika kamu mendaki musim kemarau sebaiknya persiapkan
-              masker dan bawalah air lebih karena kondisi jalur yang sangat
-              panas akan membuatmu cepat haus dan lelah. Jalur Plawangan
-              Sembalun – Puncak berupa pasir labil yang akan bergeser ketika
-              diinjak. Disarankan kamu menuju puncak jam 1 malam jika ingin
-              mendapatkan pemandangan sunrise di puncak Anjani dan tak sampai
-              siang di perjalanan menuju puncak karena terik matahari semakin
-              membuatmu lelah. Tidurlah dari jam 7 malam agar mempunyai kondisi
-              fisik prima dan tak mengantuk saat perjalanan menuju puncak. Bawa
-              juga cemilan dan air minum sendiri, jangan menitipkanya di orang
-              lain karena kecepatan berjalan setiap orang berbeda-beda. Jika
-              kondisi tak memungkinkan untuk mencapai puncak bersabarlah karena
-              gunung bukalah hanya soal mencapai puncak dan Rinjani tak akan
-              pergi kemana mana! Jalur Plawangan Sembalun – Danau Segera Anak
-              berbatu serta menurun cukup terjal yang kemudian melimpir
-              bukit-bukit. Jalur Danau Segara Anak – Plawangan Senaru sedikit
-              berbatu dan tanah dengan kondisi menanjak tapi mempunyai
-              pemandangan yang sangat indah seperti di uang Rp 10.000 lama.
-              Plawangan Senaru – Pos 3 melewati jalur yang menurun dengan
-              kondisi sangat berdebu ketika musim kemarau dan licin ketika musim
-              hujan. Pos 3 – Desa Senaru melewati jalur menurun yang cukup
-              landai dan memasuki kawasan hutan yang sangat rimbun. Jangan
-              mengeluh ketika melalui jalur-jalur tersebut karena ketika
-              mengeluh perjalanan akan terasa menjadi lebih lama, nikmatilah
-              pemandangan cantik yang dimiliki Rinjani.
-            </p>
-          </body>
+
+          <p class="tulisan_justify">
+            Jika kamu naik lewat jalur Sembalun dan turun Senaru, sumber air
+            dapat ditemukan di Pos 2 Sembalun, Pos 3 Sembalun (yang terkadang
+            hanya berupa rembesan dan dapat mengering saat musim kemarau),
+            Plawangan Sembalun, Danau Segara Anak, dan Pos 2 Senaru. Setelah
+            mengetahui lokasi sumber air, perhitungkan jumlah air yang perlu
+            dibawa dari satu sumber ke sumber berikutnya. Selanjutnya, ketahui
+            tempat-tempat yang dapat digunakan untuk bermalam. Jika naik melalui
+            jalur Sembalun dan turun melalui Senaru, kamu dapat bermalam di Pos
+            2 atau Pos 3 Sembalun, Plawangan Sembalun, dan Danau Segara Anak.
+            Kamu juga dapat berkemah di Plawangan Senaru, tetapi tempatnya tidak
+            terlalu luas dan tidak terdapat sumber air. Ketahui juga kondisi
+            jalur yang akan dilalui. Jalur dari basecamp Sembalun menuju Pos 3
+            memiliki medan yang tidak terlalu menanjak dan berupa savana. Jalur
+            Pos 3 Sembalun menuju Plawangan Sembalun menanjak dan berdebu. Jika
+            mendaki pada musim kemarau, persiapkan masker dan bawalah air yang
+            cukup karena jalur yang panas dapat membuatmu cepat haus dan lelah.
+            Jalur Plawangan Sembalun menuju puncak berupa pasir labil yang
+            bergeser ketika diinjak. Jika ingin menyaksikan matahari terbit dari
+            puncak, atur waktu keberangkatan bersama pemandu dan kelompokmu.
+            Pastikan kamu beristirahat dengan cukup agar kondisi fisik tetap
+            prima. Bawa camilan dan air minum sendiri. Jangan menitipkannya
+            kepada orang lain karena kecepatan berjalan setiap orang
+            berbeda-beda. Jika kondisi tidak memungkinkan untuk mencapai puncak,
+            jangan memaksakan diri. Mendaki gunung bukan hanya soal mencapai
+            puncak; Gunung Rinjani tidak akan pergi ke mana-mana. Jalur
+            Plawangan Sembalun menuju Danau Segara Anak berbatu dan menurun
+            cukup terjal, kemudian melewati bukit-bukit. Jalur Danau Segara Anak
+            menuju Plawangan Senaru juga memiliki bagian berbatu dan menanjak,
+            tetapi menyuguhkan pemandangan yang indah. Plawangan Senaru menuju
+            Pos 3 merupakan jalur menurun yang sangat berdebu saat musim kemarau
+            dan licin saat musim hujan. Dari Pos 3 menuju Desa Senaru, jalurnya
+            menurun cukup landai dan memasuki kawasan hutan yang rimbun. Jangan
+            mengeluh ketika melewati jalur-jalur tersebut. Nikmatilah
+            pemandangan indah yang dimiliki Gunung Rinjani.
+          </p>
+
           <div class="w3-panel w3-leftbar w3-light-grey">
             <p>
-              <i
-                >"Jaga sopan santun dan tata krama saat malekukan
-                pendakian,hormati tempat yang anda pijak"Selalu tersenyum
-                kawan.</i
-              >
+              <i>
+                "Jaga sopan santun dan tata krama saat melakukan pendakian.
+                Hormati tempat yang kamu pijak. Selalu tersenyum, kawan."
+              </i>
             </p>
-            <p>Rinjani my adventure,indahnya alam indonesiaku.</p>
+            <p>Rinjani My Adventure, indahnya alam Indonesiaku.</p>
           </div>
+
           <img
             src="img/6.JPG"
-            style="width: 100%; max-width: 1000px"
-            class="w3-margin-top"
+            alt="Pemandangan Gunung Rinjani"
+            class="article-image"
           />
-          <p><strong>Narasumber:</strong> Mansyur Suherman.</p>
-          <p><strong>Alamat:</strong> Bayan Lombok Utara.</p>
-        </div>
-      </div>
 
-      <!-- Menu Container -->
-      <div class="w3-container" id="menu">
+          <p><strong>Narasumber:</strong> Mansyur Suherman.</p>
+          <p><strong>Alamat:</strong> Bayan, Lombok Utara.</p>
+        </div>
+      </section>
+
+      <!-- Persiapan pendakian -->
+      <section class="w3-container" id="menu">
         <div class="w3-content" style="max-width: 700px">
           <h5 class="w3-center w3-padding-48">
             <span class="w3-tag w3-wide">Persiapan</span>
           </h5>
 
+          <!-- Tombol tab -->
           <div class="w3-row w3-center w3-card w3-padding">
-            <a
-              href="javascript:void(0)"
-              onclick="openMenu(event, 'Eat');"
-              id="myLink"
-            >
-              <div class="w3-col s6 tablink">Perlengkapan</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-              <div class="w3-col s6 tablink">Fisik</div>
-            </a>
+            <div class="w3-col s6">
+              <button
+                type="button"
+                class="w3-button w3-block tablink"
+                id="myLink"
+                onclick="openMenu(event, 'Eat')"
+              >
+                Perlengkapan
+              </button>
+            </div>
+
+            <div class="w3-col s6">
+              <button
+                type="button"
+                class="w3-button w3-block tablink"
+                onclick="openMenu(event, 'Drinks')"
+              >
+                Fisik
+              </button>
+            </div>
           </div>
 
+          <!-- Tab perlengkapan -->
           <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
             <h5>Sunblock</h5>
             <p class="w3-text-grey">
-              Menjaga kulit dari sinar UV. Kulit merupakan bagian tubuh yang
-              patut untuk dijaga kesehatannya.
+              Melindungi kulit dari paparan sinar UV. Kulit merupakan bagian
+              tubuh yang patut dijaga kesehatannya.
             </p>
             <br />
 
             <h5>Jas Hujan</h5>
             <p class="w3-text-grey">
-              Berjaga-jaga ketika terjadi hujan mendadak
+              Persiapkan jas hujan untuk menghadapi perubahan cuaca dan hujan
+              yang datang tiba-tiba.
             </p>
             <br />
 
             <h5>Pakaian Hangat</h5>
-            <p class="w3-text-grey">Antisipasi saat cuaca dingin</p>
+            <p class="w3-text-grey">
+              Pakaian hangat diperlukan untuk menghadapi suhu dingin di kawasan
+              pegunungan.
+            </p>
             <br />
 
-            <h5>Senter</h5>
-            <p class="w3-text-grey">Pencahayaan ketika di malam hari</p>
+            <h5>Senter atau Headlamp</h5>
+            <p class="w3-text-grey">
+              Gunakan alat penerangan ketika berjalan pada malam hari. Bawalah
+              baterai cadangan jika diperlukan.
+            </p>
             <br />
 
-            <h5>Makanan Dan Minuman Ekstra</h5>
-            <p class="w3-text-grey">Bekal selama mendaki</p>
+            <h5>Makanan dan Minuman Ekstra</h5>
+            <p class="w3-text-grey">
+              Siapkan bekal yang cukup untuk mendukung kebutuhan energi dan
+              cairan selama pendakian.
+            </p>
           </div>
 
+          <!-- Tab persiapan fisik -->
           <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
             <h5>Persiapan Fisik</h5>
             <p class="w3-text-grey">
-              Jangan menganggap remeh persiapan fisik, karena sangat penting
-              untuk keberhasilan dalam suatu pendakian. Gunung Rinjani memiliki
-              jalur pendakian yang cukup panjang, terjal, menguras mental dan
-              fisik.Persiapan fisik yang matang menjadi salah satu bekal utama
-              bagi para pendaki gunung. Banyak sekali olahraga yang dapat
-              dilakuka untuk melatih stamina tubuh seperti renang, jogging dan
-              bersepeda. Baca juga : Mau Jadi Backpacker ? Rajin Olahraga,
-              Donk…! Hal penting kenapa harus mempersiapkan fisika adalah karena
-              mendaki gunung bisa menempuh berhari-hari. Jika anda menganggap
-              jika nanti bisa saja istirahat maka anda bisa membebani kelompok
-              pendaki anda. Dan akhirnya waktu pernjalanan bisa lebih lama di
-              bandingkan perkiraan.
+              Jangan menganggap remeh persiapan fisik karena hal ini sangat
+              penting untuk mendukung pendakian. Gunung Rinjani memiliki jalur
+              yang panjang dan terjal serta dapat menguras tenaga maupun mental.
+              Persiapan fisik yang matang menjadi salah satu bekal utama
+              pendaki. Kamu dapat melatih stamina dengan olahraga seperti
+              berenang, jogging, dan bersepeda. Mendaki dapat berlangsung selama
+              beberapa hari sehingga tubuh perlu dibiasakan untuk melakukan
+              aktivitas fisik. Sesuaikan latihan dengan kondisi tubuh dan
+              tingkatkan secara bertahap.
             </p>
             <br />
 
             <h5>Ketahui Kondisi Medan Pendakian</h5>
             <p class="w3-text-grey">
-              Sebelum Anda memutuskan untuk mendaki Gunung Rinjani. Sebaiknya
-              pelajari terlebih dahulu medan rinjani sehingga Anda mengetahui
-              secara detail, salah satunya yaitu dimana rute dan sumber air
-              dapat ditemukan.Kemudian tempat camping, dimana tempat Anda bisa
-              bermalam saat melakukan pendakian Gunung Rinjani. Dengan tempat
-              dan waktu istirahat yang cukup, maka Anda dapat melanjutkan
-              perjalanan di pagi harinya dengan kondisi tubuh yang fit.Informasi
-              ini bisa anda dapatkan melalui internet. Anda juga bisa bertanya
-              kepada jasa guide di gunung rinjani beberapa waktu sebelum anda
-              memutuskan untuk mendaki. Juga bisa bertanya kepada orang yang
-              sebelunya pernah mendaki gunung Rinjani.
+              Sebelum mendaki Gunung Rinjani, pelajari medan dan rute pendakian
+              agar kamu mengetahui jalur yang akan dilalui serta lokasi sumber
+              air dan tempat berkemah. Cari informasi terbaru dari pengelola
+              resmi atau pemandu setempat. Kamu juga dapat meminta saran dari
+              orang yang pernah mendaki Rinjani, tetapi tetap periksa kembali
+              apakah informasi tersebut masih berlaku.
             </p>
             <br />
 
-            <h5>Persiapan Perlengkapan Saat Melakukan Pendakian</h5>
+            <h5>Persiapan Perlengkapan Pendakian</h5>
             <p class="w3-text-grey">
-              Persiapkan semua perlengkapan sematang mungkin, jangan sampai ada
-              barang penting yang tertinggal. Agar hal itu tidak terjadi,
-              sebaiknya buatlah ceklist barang apa saja yang akan dibawa dan
-              kemudian periksa kembali sebelum Anda memasukkan ke dalam
-              ransel.Jika Anda ingin menyewa peralatan basecamp, maka sebaiknya
-              booking terlebih dahulu barang apa saja yang akan Anda sewa untuk
-              melakukan pendakian. Karena pada saat musim pendakian sedang
-              ramai, biasanya barang-barang yang disewakan sudah habis di sewa.
-              Tentunya Anda tidak ingin rencana mendaki menjadi gagal atau Anda
-              tidak membawa perlengkapan lengkap.
+              Persiapkan perlengkapan dengan teliti agar tidak ada barang
+              penting yang tertinggal. Buat daftar barang yang akan dibawa, lalu
+              periksa kembali sebelum memasukkannya ke dalam ransel. Jika ingin
+              menyewa perlengkapan di basecamp, pertimbangkan untuk memesan
+              terlebih dahulu. Pada musim pendakian yang ramai, beberapa
+              perlengkapan sewaan bisa saja sudah habis.
             </p>
             <br />
 
             <h5>Jangan Langsung Mendaki</h5>
             <p class="w3-text-grey">
-              Ketika Anda sampai di basecamp, sebaiknya istirahat terlebih
-              dahulu sebelum melakukan pendakian. Hal ini sangat bermanaat untuk
-              menyesuaikan dengan kondisi lingkungan. Apalagi jika Anda datang
-              dari luar kota, tentu hal itu menjadi sebuah kewajiban.Jarak
-              bandara serta pelabuhan yang cukup jauh akan membuat tubuh Anda
-              merasa lelah selama perjalanan. Jadi jangan pernah memaksakan
-              untuk mendaki langsung jika Anda tidak ingin hal yang tidak
-              diinginkan terjadi.
+              Ketika sampai di basecamp, istirahatlah terlebih dahulu sebelum
+              memulai pendakian. Tubuh memerlukan waktu untuk pulih dari
+              perjalanan dan menyesuaikan diri dengan kondisi lingkungan. Jika
+              kamu datang dari luar kota, jangan memaksakan diri untuk langsung
+              mendaki ketika masih lelah. Pastikan kondisi tubuh cukup fit
+              sebelum memulai perjalanan.
             </p>
             <br />
 
-            <h5>Pilih Jalur Sembalun Atau Senaru</h5>
+            <h5>Pilih Jalur Sembalun atau Senaru</h5>
             <p class="w3-text-grey">
-              Tentukan jalur mana yang akan Anda pilih saat mendaki Gunung
-              Rinjani. Jika tujuannya puncak, maka jalur Sembalun merupakan
-              pilihan jalur yang tepat karena jalur tersebut langsung menuju
-              puncak. Namun jika tujuan Anda Danau Segara Anak, sebaiknya Anda
-              memilih jalur Senaru karena memiliki pemandangan yang sangat indah
-              dan langsung menuju Danau Segara Anak.Meskipun terdapat beberapa
-              jalur lain Timbanuh dan Torean namun jalur Senaru dan Torean
-              merupakan jalur yang ramai dan paling umum digunakan untuk pendaki
-              pemula.
+              Tentukan jalur berdasarkan tujuan, kemampuan, dan kondisi
+              kelompok. Jalur Sembalun dikenal dengan pemandangan savananya dan
+              menjadi salah satu jalur menuju puncak. Jalur Senaru menawarkan
+              pemandangan hutan dan menjadi jalur menuju kawasan Danau Segara
+              Anak. Terdapat pula jalur lain, seperti Timbanuh dan Torean.
+              Sebelum menentukan pilihan, periksa informasi pembukaan jalur,
+              ketentuan pendakian, dan kondisi terkini melalui pengelola resmi
+              Taman Nasional Gunung Rinjani.
             </p>
           </div>
+
           <img
             src="img/pucuk.JPEG"
-            style="width: 100%; max-width: 1000px; margin-top: 32px"
+            alt="Pemandangan alam Gunung Rinjani"
+            class="article-image"
           />
         </div>
-      </div>
+      </section>
 
-      <!-- Contact/Area Container -->
-      <div class="w3-container" id="where" style="padding-bottom: 32px">
+      <!-- Danau Segara Anak -->
+      <section class="w3-container" id="where" style="padding-bottom: 32px">
         <div class="w3-content" style="max-width: 700px">
           <h5 class="w3-center w3-padding-48">
-            <span class="w3-tag w3-wide">Berenang Di Danau Segara Anak</span>
+            <span class="w3-tag w3-wide"> Danau Segara Anak </span>
           </h5>
-          <p>Pesona Danau Sagara Anak.</p>
-          <head>
-            <link rel="stylesheet" type="text/css" href="style.css" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-          </head>
-          <body>
-            <div class="malasngoding-slider">
-              <div class="isi-slider">
-                <img src="img/R.JPEG" alt="R.JPEG" height="400" width="800" />
-                <img src="img/20.JPEG" alt="20.JPEG" height="400" width="800" />
-                <img src="img/30.JPG" alt="30.JPG" height="400" width="800" />
-                <img
-                  src="img/download.JPEG"
-                  alt="download.JPEG"
-                  height="400"
-                  width="800"
-                />
-                <img src="img/12.JPG" alt="12.JPG" height="400" width="800" />
-                <img src="img/3.JPG" alt="3.JPG" height="400" width="800" />
-              </div>
-            </div>
-          </body>
-          <head>
-            <title>Format text CSS</title>
-            <link rel="stylesheet" type="text/css" href="text.css" />
-          </head>
-          <body>
-            <p class="tulisan_justify">
-              Danau Segara Anak merupakan kaldera atau danau kawah dari Gunung
-              Rinjani yang berada di ketinggian 2.008 meter di atas permukaan
-              laut. Luas Danau ini mencapai 1.100 hektare dan dengan kedalaman
-              160-230 meter. Lokasi Danau Segara Anak ini berada tepat di lembah
-              bagian barat Gunung Rinjani yang yang terletak di Desa Sembalun
-              Lawang, Kecamatan Sembalun, Kabupaten Lombok Timur, Nusa Tenggara
-              Barat. Di tengah-tengah danau terdapat sebuah gunung yang diberi
-              nama Gunung Barujari dengan ketinggian 2.376 meter di atas
-              permukaan laut. Menurut Tempo dalam Hikayat 45 Danau Indonesia
-              (2017), Gunung berapi aktif itu muncul hampir bersamaan dengan
-              proses terbentuknya Segara Anak setelah letusan dahsyat Gunung
-              Rinjani Purba (Gunung Samalas) pada 1257. Letusan dengan kekuatan
-              7 pada skala VEI (volcanic explosivity index) itu meruntuhkan
-              tubuh Gunung Samalas dan membentuk kaldera raksasa. Letusan itu
-              menyisakan puncak dengan ketinggian 3.762 meter di atas permukaan
-              laut yang sekarang dikenal dengan puncak Rinjani. Setelah 300-4000
-              tahun, di kaldera raksasa itu terbentuk Danau Segara Anak. Airnya
-              bersumber dari hujan dan mata air di sana. Sementara magma di
-              perut Rinjani terus bergolak, ditandai dengan munculnya kerucut
-              Gunung Barujari dari dalam Segara Anak. Saat ini, Gunung Barujari
-              telah mencapai ketinggian 2.376 mdpl. Dinamakan Danau Segara Anak
-              karena warna warna airnya biru seperti air laut. Danau ini
-              berjarak 5 km dari puncak Rinjani. Jika ingin berkunjung ke sini,
-              Anda harus mendaki puncak Gunung Rinjani terlebih dahulu. Meski
-              butuh perjuangan keras, sepanjang perjalanan Anda melihat
-              pemandangan yang menakjubkan.
-            </p>
-          </body>
-        </div>
-      </div>
 
-      <!-- End page content -->
-    </div>
+          <p>Pesona Danau Segara Anak.</p>
+
+          <!-- Slider gambar -->
+          <div class="malasngoding-slider">
+            <div class="isi-slider">
+              <img
+                src="img/R.JPEG"
+                alt="Pemandangan Danau Segara Anak"
+                loading="lazy"
+              />
+              <img
+                src="img/20.JPEG"
+                alt="Pemandangan alam Rinjani"
+                loading="lazy"
+              />
+              <img
+                src="img/30.JPG"
+                alt="Pemandangan pegunungan Rinjani"
+                loading="lazy"
+              />
+              <img
+                src="img/download.JPEG"
+                alt="Panorama Gunung Rinjani"
+                loading="lazy"
+              />
+              <img
+                src="img/12.JPG"
+                alt="Pemandangan jalur pendakian"
+                loading="lazy"
+              />
+              <img
+                src="img/3.JPG"
+                alt="Keindahan alam Gunung Rinjani"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <p class="tulisan_justify">
+            Danau Segara Anak merupakan danau kaldera yang berada di kawasan
+            Gunung Rinjani, pada ketinggian sekitar 2.000 meter di atas
+            permukaan laut. Danau ini terletak di bagian barat kawasan Gunung
+            Rinjani, Pulau Lombok, Nusa Tenggara Barat. Di kawasan kaldera ini
+            terdapat Gunung Barujari, sebuah kerucut vulkanik yang terbentuk
+            melalui aktivitas gunung berapi. Kaldera Rinjani berkaitan dengan
+            letusan besar Gunung Samalas pada tahun 1257 yang membentuk bentang
+            alam kawasan tersebut. Air danau berasal dari hujan dan sumber air
+            di sekitarnya. Nama Segara Anak sering dikaitkan dengan warna airnya
+            yang kebiruan seperti laut. Danau ini menjadi salah satu daya tarik
+            utama pendakian Gunung Rinjani. Perjalanan menuju Danau Segara Anak
+            membutuhkan persiapan, stamina, dan perhatian terhadap kondisi
+            medan. Sebelum berkunjung, pastikan jalur pendakian dibuka secara
+            resmi dan ikuti arahan petugas serta pemandu. Selalu jaga kebersihan
+            dan jangan meninggalkan sampah di kawasan gunung.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-      <center>
-        <h4>RINJANI MY ADVENTURE <b>INDAHNYA INDONESIAKU</b></h4>
-      </center>
+      <h4>
+        RINJANI MY ADVENTURE
+        <b>INDAHNYA INDONESIAKU</b>
+      </h4>
     </footer>
 
+    <!-- JavaScript tab -->
     <script>
-      // Tabbed Menu
-      function openMenu(evt, menuName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("menu");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
+      function openMenu(event, menuName) {
+        const menus = document.querySelectorAll(".menu");
+        const tabLinks = document.querySelectorAll(".tablink");
+
+        menus.forEach(function (menu) {
+          menu.style.display = "none";
+        });
+
+        tabLinks.forEach(function (tab) {
+          tab.classList.remove("w3-dark-grey");
+        });
+
+        const selectedMenu = document.getElementById(menuName);
+
+        if (selectedMenu) {
+          selectedMenu.style.display = "block";
         }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(
-            " w3-dark-grey",
-            ""
-          );
+
+        if (event && event.currentTarget) {
+          event.currentTarget.classList.add("w3-dark-grey");
         }
-        document.getElementById(menuName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
       }
-      document.getElementById("myLink").click();
+
+      // Buka tab Perlengkapan secara otomatis saat halaman dimuat.
+      document.addEventListener("DOMContentLoaded", function () {
+        const defaultTab = document.getElementById("myLink");
+
+        if (defaultTab) {
+          defaultTab.click();
+        }
+      });
     </script>
   </body>
 </html>
